@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(../alfons-morales-YLSwjSy7stw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  height: 17vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo div,
+.logo img {
+  height: 15vh;
+  width: 18vh;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ffffff8e;
+  cursor: pointer;
+}
+
+.login button {
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.login button:hover{
+  background: #9C27B0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  align-items: center;
+  height: 83vh;
+}
+
+.chose_category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chose_category h1 {
+  color: white;
+  font-size: 100px;
+}
+
+.category_container {
+  width: 1450px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.category_container::-webkit-scrollbar {
+  display: none;
+}
+
+.categories {
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  opacity: .9;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out .2s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px white;;
+}
+
+.department_title {
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.9), 0px -5px 35px rgba(255, 255, 255, 0.3);
+  transition: all ease-in-out .2s;
+}
+
+#computer {
+  background-image: url(cpe.jpg);
+}
+
+#business {
+  background-image: url(business.jpg);
+}
+
+#religion {
+  background-image: url(religion.jpg);
+}
+
+#mls {
+  background-image: url(mls.jpg);
+}
+
+#pharmacy {
+  background-image: url(pharmacy.jpg);
+}
+
+#dentistry {
+  background-image: url(dentistry.jpg);
+}
+
+#civil {
+  background-image: url(civil.jpg);
+}
+
+#environment {
+  background-image: url(environment.jpg);
+}
+
+#petroleum {
+  background-image: url(petrolium.jpg);
+}
+
+#english {
+  background-image: url(english.jpg);
+}
+
+#all {
+  background-image: url(all.jpg);
+}
+
+.categories:hover {
+  background-position: center;
+}
+
+.categories:hover .department_title{
+  font-size: 45px;
+}
+
+@media screen and (max-width: 1450px) {
+  .category_container {
+    width: 850px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chose_category h1 {
+    color: white;
+    font-size: 50px;
+  }
+  .category_container {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding: 5px;
+  }
+  .category_container {
+    width: 375px;
+  }
+}

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent{
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(../alfons-morales-YLSwjSy7stw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo div,
+.logo img {
+  height: 15vh;
+  width: 18vh;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ffffff8e;
+  cursor: pointer;
+}
+
+.login button {
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+  width: 600px;
+  /* height: 400px; */
+  margin: 3em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+  padding-top: 40px;
+  color: #8C55AA;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.un {
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.14);
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 300px;
+}
+
+select.un {
+  text-align-last:center;
+  color: rgb(38, 50, 56);
+  opacity: .8;
+}
+
+label.un{
+  color: rgb(38, 50, 56);
+
+}
+
+
+.un:hover{
+  background-color: #8C55AA;
+  color: white;
+}
+
+.un:focus{
+  background-color: #8C55AA;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+  text-align: left;
+}
+
+.un:focus::placeholder{
+  color: white;
+}
+
+.un:hover::placeholder{
+  color: white;
+}
+
+form.form1 {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  margin-top: 30px;
+}
+
+.submit:hover{
+  background: #5b0e85;
+}
+
+input[type="submit"] {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #f6ddfa;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border: none;
+}
+
+input[type="file"]{
+  display: none;
+}
+
+#alert{
+  width: 500px;
+  /* height: 10vh; */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 0px 20px;
+  padding: 10px 20px;
+  background-color: #5eff0085;
+  display: none;
+}
+
+#alert_head{
+  font-weight: bolder;
+  font-size: larger;
+  margin-bottom: 5px;
+  color: #26681d;
+}
+
+#alert_error{
+  color: rgb(51, 88, 88);
+}
+
+
+@media (max-width: 600px) {
+  .main {
+    border-radius: 0px;
+    width: 400px;
+  }
+  .alert{
+    width: 400px;
+  }
+}
